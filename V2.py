@@ -34,7 +34,7 @@ def calcular_area_triangulo(p1, p2, p3):
 def resolver_optimizado(postes):
     hull = obtener_convex_hull(postes)
     h = len(hull)
-    print(f"-> Reducción masiva: De {len(postes)} puntos totales a solo {h} que están en la envolvente.")
+    print(f"-> Reducción masiva: De {len(postes)} postes totales a solo {h} que están en la envolvente.")
     if h < 3: return 0, None, 0
     area_maxima = 0
     puntos_maximos = (None, None, None)
@@ -84,4 +84,5 @@ if __name__ == "__main__":
     print(f"Área Máxima: {area}")
     print(f"Vértices: {tri_puntos}")
     if tri_puntos:
+
         visualizar_optimizado(postes, hull, tri_puntos)
