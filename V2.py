@@ -84,5 +84,4 @@ if __name__ == "__main__":
     print(f"Área Máxima: {area}")
     print(f"Vértices: {tri_puntos}")
     if tri_puntos:
-
         visualizar_optimizado(postes, hull, tri_puntos)
